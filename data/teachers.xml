@@ -1,0 +1,8 @@
+<teachers>
+  <teacher id="T001">
+    <nom>Ben</nom>
+    <prenom>Omar</prenom>
+    <matiere>Tajwid</matiere>
+    <classes>Coran1,Coran2</classes>
+  </teacher>
+</teachers>

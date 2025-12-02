@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<students>
+  <student id="S001">
+    <nom>Ahmed</nom>
+    <prenom>Ali</prenom>
+    <niveau>Prépa</niveau>
+    <classe>Coran1</classe>
+    <suras>0</suras>
+  </student>
+  <student id="S003">
+    <nom>meddah</nom>
+    <prenom>oussama</prenom>
+    <niveau></niveau>
+    <classe>Coran2</classe>
+    <suras>7</suras>
+  </student>
+</students>

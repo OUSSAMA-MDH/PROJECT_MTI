@@ -1,0 +1,12 @@
+<classes>
+  <classe id="C001">
+    <nom>Coran1</nom>
+    <students>S001</students>
+    <teachers>T001</teachers>
+  </classe>
+  <classe id="C002">
+    <nom>Coran2</nom>
+    <students>S002</students>
+    <teachers>T001</teachers>
+  </classe>
+</classes>
