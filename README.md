@@ -77,7 +77,7 @@ ECOLE_QURANIYA_COMPLETE/
 
 Clone the repository:
 
-git clone https://github.com/OUSSAMA-MDH/HOME_WORK.git
+git clone https://github.com/OUSSAMA-MDH/PROJECT_MTI.git
 cd ECOLE_QURANIYA_COMPLETE
 
 
