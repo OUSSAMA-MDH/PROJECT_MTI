@@ -1,8 +1,7 @@
 
 
 
-🌟 Overview
-
+🌟 
 Managing student information efficiently is crucial for specialized institutions like Quranic schools. This system allows administrators and teachers to:
 
 Organize and centralize student and teacher information.
