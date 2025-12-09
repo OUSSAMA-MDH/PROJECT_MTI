@@ -41,7 +41,7 @@ CSV – Data export
 
 MVC Architecture – Clear separation of models, views, and controllers
 
-Design Patterns – Factory Method & Abstract Factory
+Design Patterns – Factory Method & Abstract Factory& Adapter & Observer & Strategy &  Proxy & Facade 
 
 
 
@@ -49,28 +49,34 @@ Design Patterns – Factory Method & Abstract Factory
 
 ECOLE_QURANIYA_COMPLETE/
 │
-├── controllers/
-│   ├── student_controller.py
-│   ├── teacher_controller.py
-│   └── classe_controller.py
+├── controllers/                     # Contient les contrôleurs pour gérer les entités
+│   ├── student_controller.py        # Gestion des étudiants (CRUD)
+│   ├── teacher_controller.py        # Gestion des enseignants
+│   └── classe_controller.py         # Gestion des classes
 │
-├── models/
-│   ├── student_factory.py
-│   ├── student_model.py
-│   ├── teacher_model.py
-│   └── classe_model.py
+├── models/                          # Contient les modèles de données
+│   ├── student_model.py             # Modèle étudiant avec lecture/écriture XML
+│   ├── student_factory.py           # Factory pour créer différents types d'étudiants (Adapter)
+│   ├── teacher_model.py             # Modèle enseignants
+│   └── classe_model.py              # Modèle classes
 │
-├── utils/
-│   ├── auth.py
-│   ├── csv_export.py
-│   └── xml_handler.py
+├── utils/                           # Contient les utilitaires
+│   ├── auth.py                      # Authentification des utilisateurs
+│   ├── csv_exporter.py              # Export CSV et JSON
+│   └── xml_utils.py                 # Fonctions utilitaires XML
 │
-├── data/
+├── patterns_school.py               # Contient tous les Patterns:
+│                                     # Adapter (StudentFactory)
+│                                     # Observer (Subject / StudentObserver)
+│                                     # Strategy (Context / PromotionStrategy / RepeatStrategy)
+│                                     # Proxy (StudentAccessProxy / RealStudentAccess)
+│                                     # Facade (SchoolFacade)
+├── main.py                          # CLI principal et tests des Patterns
+├── data/                             # Stockage des données
 │   ├── students.xml
-│   ├── teachers.xml
-│   └── classes.xml
-│
-└── main.py
+│   ├── students.csv
+│   └── students.json
+└── README.md                         # Documentation du projet
 
 
 ⚙ Installation
@@ -89,23 +95,3 @@ pip install -r requirements.txt
 Run the application:
 
 python main.py
-
-🖥 Usage
-
-Log in as an administrator.
-
-Navigate through the menu to manage students, teachers, and classes.
-
-Track memorized suras for Hafiz students.
-
-Export data to CSV for reporting.
-
-
-
-🧩 Design Patterns
-
-Factory Method: Creates student objects based on type (e.g., Hafiz, Regular).
-
-Abstract Factory: Creates families of related objects like Student, Teacher, Class without specifying concrete classes.
-
-Ensures a clean, modular, and maintainable codebase.
